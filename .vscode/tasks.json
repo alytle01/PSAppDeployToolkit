@@ -1,6 +1,6 @@
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the docuemntation aboiut the tasks.json format
+    // for the documentation about the tasks.json format
     "version": "2.0.0",
     "windows": {
         "options": {
@@ -17,14 +17,14 @@
     },
     "tasks": [
         {
-            "label": "build",
+            "label": "Build",
             "type": "shell",
             "command": "powershell",
             "args": [
                 "-ExecutionPolicy",
                 "Bypass",
                 "-File",
-                "${cwd}\\.vscode\\Build.ps1"
+                "${cwd}\\.vscode\\build.ps1"
             ],
             "group": {
                 "kind": "build",
@@ -44,7 +44,7 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-        }
+            }
         },
         {
             "label": "AppDeployToolkitHelp",
@@ -59,10 +59,10 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-        },
-        "presentation": {
-            "close": true,
-        }
+            },
+            "presentation": {
+                "close": true
+            }
         }
     ]
 }

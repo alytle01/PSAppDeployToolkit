@@ -1,18 +1,13 @@
 {
     "files.exclude": {
-        ".exe": true,
-        ".msi": true,
         ".editorconfig": true,
         ".gitattributes": true,
         ".github": true,
-        "**Deploy-Application.exe": true,
-        "**Deploy-Application.exe.config": true,
-        "**/Thumbs.db": true,
+        "**/Deploy-Application.exe": true,
+        "**/Deploy-Application.exe.config": true,
+        "**/Thumbs.db": false,
         "AppDeployToolkitLogo.png": true,
         "CHANGELOG.txt": true,
-        "LICENSE.txt": true,
-        "README.md": true,
-        "ReleaseNotes.txt": true,
         "COPYING.Lesser": true,
         "docs": true,
         "Examples": true,
@@ -20,30 +15,31 @@
         "material": true,
         "mkdocs.yml": true,
         "PSAppDeployToolkit.pdf": true,
-        "REEADME.md": true,
+        "README.md": true,
         "Sources": true,
         "Testing": true,
-        "wiki": true   
-},
-"terminal.integrated.profiles.windows": {
-    "PowerShell Devops": {
-        "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
-        "source": "PowerShell",
-        "args": [
-            "-NoLogo",
-            "-NoExit",
-            "-ExecutionPolicy",
-            "RemoteSigned",
-        ]
+        "TODO.txt": true,
+        "wiki": true
     },
-    "Git Bash": null,
-    "Command Prompt": null,
-    "JavaScript Debug Terminal": null,
-    "Azure Cloud Shell (Bash)": null,
-},
-"terminal.integrated.defaultProfile.windows": "PowerShell Devops",
-"files.defaultLanguage": "powershell",
-"terminal.integrated.enablePersistentSessions": false,
-"terminal.integrated.persistentSessionReviveProcess": "never",
-"powershell.scriptAnalysis.settingsPath": ".vscode\\PSScriptAnalyzerSettings.psd1"
+    "terminal.integrated.profiles.windows": {
+        "PowerShell Devops": {
+            "path": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "source": "PowerShell",
+            "args": [
+                "-NoLogo",
+                "-NoExit",
+                "-ExecutionPolicy",
+                "RemoteSigned",
+                "Import-Module oh-my-posh;Set-Theme qwerty"
+            ]
+        },
+        "Git Bash": null,
+        "Command Prompt": null,
+        "JavaScript Debug Terminal": null,
+        "Azure Cloud Shell (Bash)": null,
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell Devops",
+    "files.defaultLanguage": "powershell",
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never"
 }

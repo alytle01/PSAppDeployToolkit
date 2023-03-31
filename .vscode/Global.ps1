@@ -6,6 +6,6 @@
 [string]$LogonCommand = "LogonCommand.ps1"
 
 # Cache resources
-Remove-Item -Path "$Win32App" -Recurse -Force -Verbose -ErrorAction Ignore
+Remove-Item -Path "$Win32App" -Recurse -Force -ErrorAction Ignore
 Copy-Item -Path "Toolkit" -Destination "$Cache" -Recurse -Force -Verbose -ErrorAction Ignore
 explorer "$Cache"
